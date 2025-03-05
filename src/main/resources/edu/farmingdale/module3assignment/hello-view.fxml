@@ -44,7 +44,7 @@
         <HBox spacing="5" alignment="CENTER" styleClass="bottom-box">
             <Label text="Enter an expression:" styleClass="bottom-label"/>
             <TextField fx:id="userExpressionField"
-                       promptText="Enter your expression here"
+                       promptText="Expression Here"
                        styleClass="top-textfield"
                        prefWidth="120"/>
             <Button fx:id="verifyButton" text="Verify"
