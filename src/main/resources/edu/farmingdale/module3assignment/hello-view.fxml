@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="edu.farmingdale.module3assignment.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="edu.farmingdale.module3assignment.HelloController">
+
+    <!-- Top: "Find a Solution", non-editable solution field, and "Refresh" button -->
+    <top>
+        <HBox spacing="5" alignment="CENTER" styleClass="top-box">
+            <Button fx:id="findSolutionButton" text="Find a Solution"
+                    onAction="#onFindSolutionClicked"
+                    styleClass="top-button"/>
+            <!-- This field displays the auto-generated solution and is non-editable -->
+            <TextField fx:id="solutionField"
+                       styleClass="expression-field"
+                       editable="false"
+                       text="(6+6)*1 2/6"
+                       prefWidth="200"/>
+            <Button fx:id="refreshButton" text="Refresh"
+                    onAction="#onRefreshButtonClicked"
+                    styleClass="top-button"/>
+        </HBox>
+    </top>
+
+
+    <center>
+        <HBox spacing="5" alignment="CENTER" styleClass="card-box">
+            <ImageView fx:id="card1" fitWidth="80" preserveRatio="true" styleClass="card-image"/>
+            <ImageView fx:id="card2" fitWidth="80" preserveRatio="true" styleClass="card-image"/>
+            <ImageView fx:id="card3" fitWidth="80" preserveRatio="true" styleClass="card-image"/>
+            <ImageView fx:id="card4" fitWidth="80" preserveRatio="true" styleClass="card-image"/>
+        </HBox>
+    </center>
+
+    <!-- Bottom: "Enter an expression:" label, an editable text field for user input, and a "Verify" button -->
+    <bottom>
+        <HBox spacing="5" alignment="CENTER" styleClass="bottom-box">
+            <Label text="Enter an expression:" styleClass="bottom-label"/>
+            <TextField fx:id="userExpressionField"
+                       promptText="Enter your expression here"
+                       styleClass="top-textfield"
+                       prefWidth="120"/>
+            <Button fx:id="verifyButton" text="Verify"
+                    onAction="#onVerifyButtonClicked"
+                    styleClass="verify-button"/>
+        </HBox>
+    </bottom>
+</BorderPane>

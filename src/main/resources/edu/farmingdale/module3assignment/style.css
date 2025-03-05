@@ -1,10 +1,56 @@
-.button {
-    -fx-background-color: linear-gradient(to bottom, #e6e6e6, #cccccc);
-    -fx-border-color: #999999;
-    -fx-padding: 6px 12px;
+/* The top HBox area */
+.top-box {
+    -fx-padding: 5;
+    -fx-background-color: linear-gradient(#e6e6e6, #f2f2f2);
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
 }
-.hbox {
+
+/* The bottom HBox area */
+.bottom-box {
+    -fx-padding: 5;
+    -fx-background-color: linear-gradient(#e6e6e6, #f2f2f2);
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+}
+
+/* The center HBox that holds the cards */
+.card-box {
+    -fx-padding: 5;
+    -fx-background-color: white; /* White background behind cards */
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+
+/* The top text field */
+.top-textfield {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+}
+
+/* The expression field at the bottom */
+.expression-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+}
+
+/* The label at the bottom */
+.bottom-label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+/* The top buttons + verify button style */
+.top-button, .verify-button {
+    -fx-background-color: linear-gradient(#e6e6e6, #ffffff);
     -fx-border-color: #999999;
     -fx-border-width: 1;
-    -fx-border-radius: 2;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-padding: 3 10 3 10;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.2), 1, 0, 0, 1 );
+    -fx-cursor: hand;
 }
