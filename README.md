@@ -2,15 +2,6 @@ Card Game - 24
 
 This project is a JavaFX implementation of the classic “24” card game. The goal of the game is to use four randomly selected playing cards and apply arithmetic operations to create an expression that evaluates to 24.
 
-Table of Contents
-	•	Features
-	•	Project Structure
-	•	Requirements
-	•	How to Run
-	•	Usage
-	•	Demo
-	•	License
-
 Features
 	•	Random Card Selection:
 Four playing cards are randomly chosen from a standard deck. Card values are based on:
@@ -28,32 +19,6 @@ The “Verify” button checks if the user-entered expression is correct and eva
 	•	UI Styling:
 A Swing-like UI with gradient backgrounds, 1-pixel black borders around card images, and a consistent layout across top, center, and bottom sections.
 
-Project Structure
-
-The project follows a standard Maven structure:
-Module3Assignment
-├── pom.xml                     # Maven configuration file 
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── edu
-│   │   │       └── farmingdale
-│   │   │           └── module3assignment
-│   │   │               ├── HelloApplication.java
-│   │   │               ├── HelloController.java
-│   │   │               └── module-info.java
-│   │   └── resources
-│   │       └── edu
-│   │           └── farmingdale
-│   │               └── module3assignment
-│   │                   ├── hello-view.fxml
-│   │                   ├── style.css
-│   │                   └── cards
-│   │                       ├── ace_of_clubs.png
-│   │                       ├── 2_of_clubs.png
-│   │                       ├── ... (all 52 card images)
-│   │                       └── king_of_spades.png
-└── README.md
 
 Requirements
 	•	Java JDK 11 or higher (tested with JDK 23)
